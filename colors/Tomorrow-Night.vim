@@ -332,9 +332,27 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
 
+	" HTML/XML Highlighting
+	call <SID>X("Tag", s:red, "", "none")
+
+	hi link htmlTag Tag
+	hi link htmlTagName htmlTag
+
+	" CSS Highlighting
+	call <SID>X("cssTagName", s:purple, "", "none")
+	call <SID>X("cssIdentifier", s:red, "", "none")
+	call <SID>X("cssClassName", s:red, "", "none")
+	call <SID>X("cssColor", s:aqua, "", "none")
+	call <SID>X("cssPseudoClass", s:red, "", "italic")
+	call <SID>X("cssFontDescriptor", s:purple, "", "none")
+
+	hi link cssPseudoClassId cssPseudoClass
+
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
+	" User (statusline) colors
+	call <SID>X("User2", s:foreground, "a32929", "reverse")
 
 	" Delete Functions
 	delf <SID>X
