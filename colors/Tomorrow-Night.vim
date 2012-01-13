@@ -287,6 +287,8 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("Type", s:blue, "", "none")
 	call <SID>X("Define", s:purple, "", "none")
 	call <SID>X("Include", s:blue, "", "")
+	call <SID>X("StorageClass", s:yellow, "", "")
+	call <SID>X("Delimiter", s:yellow, "", "")
 	"call <SID>X("Ignore", "666666", "", "")
 
 	" Vim Highlighting
@@ -331,6 +333,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	call <SID>X("javaScriptRepeat", s:purple, "", "")
 	call <SID>X("javaScriptNumber", s:orange, "", "")
 	call <SID>X("javaScriptMember", s:orange, "", "")
+	call <SID>X("javaScriptType", s:blue, "", "")
 
 	" HTML/XML Highlighting
 	call <SID>X("Tag", s:red, "", "none")
@@ -351,8 +354,9 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 	" Diff Highlighting
 	call <SID>X("diffAdded", s:green, "", "")
 	call <SID>X("diffRemoved", s:red, "", "")
+
 	" User (statusline) colors
-	call <SID>X("User2", s:foreground, "a32929", "reverse")
+	call <SID>X("User2", s:window, s:red, "reverse")
 
 	" Delete Functions
 	delf <SID>X
