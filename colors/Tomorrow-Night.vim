@@ -340,6 +340,7 @@ if has("gui_running") || &t_Co == 88 || &t_Co == 256
 
 	hi link htmlTag Tag
 	hi link htmlTagName htmlTag
+	hi link htmlTagN htmlTag
 
 	" CSS Highlighting
 	call <SID>X("cssTagName", s:purple, "", "none")
