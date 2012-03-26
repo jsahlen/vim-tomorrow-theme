@@ -31,8 +31,8 @@ vim_colors "New-Tomorrow-Night" do
   SpecialKey selection
   Search background, yellow
   TabLine foreground, background, :gui => "reverse"
-  StatusLine window, yellow, :gui => "reverse"
-  StatusLineNC window, foreground, :gui => "reverse"
+  StatusLine foreground, window
+  StatusLineNC selection
   VertSplit window, window, :gui => "none"
   Visual nil, selection
   Directory blue

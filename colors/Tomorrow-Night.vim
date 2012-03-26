@@ -24,8 +24,8 @@ hi NonText                    guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi SpecialKey                 guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi Search                     guifg=#111215 ctermfg=233  guibg=#F0C674 ctermbg=222  gui=NONE cterm=NONE
 hi TabLine                    guifg=#C5C8C6 ctermfg=251  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
-hi StatusLine                 guifg=#4D5057 ctermfg=239  guibg=#F0C674 ctermbg=222  gui=REVERSE cterm=REVERSE
-hi StatusLineNC               guifg=#4D5057 ctermfg=239  guibg=#C5C8C6 ctermbg=251  gui=REVERSE cterm=REVERSE
+hi StatusLine                 guifg=#C5C8C6 ctermfg=251  guibg=#4D5057 ctermbg=239  gui=NONE cterm=NONE
+hi StatusLineNC               guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi VertSplit                  guifg=#4D5057 ctermfg=239  guibg=#4D5057 ctermbg=239  gui=NONE cterm=NONE
 hi Visual                     guibg=#373B41 ctermbg=237  gui=NONE cterm=NONE
 hi Directory                  guifg=#81A2BE ctermfg=109  gui=NONE cterm=NONE
