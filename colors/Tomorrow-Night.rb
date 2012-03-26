@@ -30,7 +30,9 @@ vim_colors "New-Tomorrow-Night" do
   NonText selection
   SpecialKey selection
   Search background, yellow
-  TabLine foreground, background, :gui => "reverse"
+  TabLine background, window
+  TabLineFill background, window
+  TabLineSel comment
   StatusLine foreground, window
   StatusLineNC selection
   VertSplit window, window, :gui => "none"
