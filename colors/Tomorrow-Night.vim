@@ -12,7 +12,7 @@ if version > 580
     endif
 endif
 
-let colors_name="New-Tomorrow-Night"
+let colors_name="Tomorrow-Night"
 
 if has("gui_running")
     set background=dark
@@ -20,11 +20,12 @@ endif
 
 hi Normal                     guifg=#C5C8C6 ctermfg=251  guibg=#111215 ctermbg=NONE gui=NONE cterm=NONE
 hi LineNr                     guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
+hi CursorLineNr               guifg=#C5C8C6 ctermfg=251  guibg=#282A2E ctermbg=235  gui=NONE cterm=NONE
 hi NonText                    guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi SpecialKey                 guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
-hi Search                     guifg=#111215 ctermfg=233  guibg=#F0C674 ctermbg=222  gui=NONE cterm=NONE
-hi TabLine                    guifg=#111215 ctermfg=233  guibg=#4D5057 ctermbg=239  gui=NONE cterm=NONE
-hi TabLineFill                guifg=#111215 ctermfg=233  guibg=#4D5057 ctermbg=239  gui=NONE cterm=NONE
+hi Search                     guifg=#F0C674 ctermfg=222  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
+hi TabLine                    guifg=#4D5057 ctermfg=239  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
+hi TabLineFill                guifg=#4D5057 ctermfg=239  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
 hi TabLineSel                 guifg=#969896 ctermfg=246  gui=NONE cterm=NONE
 hi StatusLine                 guifg=#C5C8C6 ctermfg=251  guibg=#4D5057 ctermbg=239  gui=NONE cterm=NONE
 hi StatusLineNC               guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
@@ -45,7 +46,7 @@ hi PMenuSel                   guifg=#C5C8C6 ctermfg=251  guibg=#373B41 ctermbg=2
 hi SignColumn                 guibg=#111215 ctermbg=233  gui=NONE cterm=NONE
 hi ColorColumn                guibg=#282A2E ctermbg=235  gui=NONE cterm=NONE
 hi Comment                    guifg=#969896 ctermfg=246  gui=NONE cterm=NONE
-hi Todo                       guifg=#111215 ctermfg=233  guibg=#F0C674 ctermbg=222  gui=NONE cterm=NONE
+hi Todo                       guifg=#DE935F ctermfg=173  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
 hi Title                      guifg=#969896 ctermfg=246  gui=NONE cterm=NONE
 hi Identifier                 guifg=#CC6666 ctermfg=167  gui=NONE cterm=NONE
 hi Statement                  guifg=#C5C8C6 ctermfg=251  gui=NONE cterm=NONE
@@ -93,8 +94,10 @@ hi javaScriptConditional      guifg=#B294BB ctermfg=139  gui=NONE cterm=NONE
 hi javaScriptRepeat           guifg=#B294BB ctermfg=139  gui=NONE cterm=NONE
 hi javaScriptNumber           guifg=#DE935F ctermfg=173  gui=NONE cterm=NONE
 hi javaScriptMember           guifg=#DE935F ctermfg=173  gui=NONE cterm=NONE
-hi diffAdded                  guifg=#B5BD68 ctermfg=143  gui=NONE cterm=NONE
-hi diffRemoved                guifg=#CC6666 ctermfg=167  gui=NONE cterm=NONE
+hi DiffAdd                    guifg=#B5BD68 ctermfg=143  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
+hi DiffDelete                 guifg=#CC6666 ctermfg=167  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
+hi DiffChange                 guibg=#373B41 ctermbg=237  gui=NONE cterm=NONE
+hi DiffText                   guifg=#CC6666 ctermfg=167  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
 hi ShowMarksHLl               guifg=#DE935F ctermfg=173  guibg=#111215 ctermbg=233  gui=NONE cterm=NONE
 hi ShowMarksHLo               guifg=#B294BB ctermfg=139  guibg=#111215 ctermbg=233  gui=NONE cterm=NONE
 hi ShowMarksHLu               guifg=#F0C674 ctermfg=222  guibg=#111215 ctermbg=233  gui=NONE cterm=NONE

@@ -17,7 +17,7 @@ window     = "4d5057"
 
 # Define the theme
 
-vim_colors "New-Tomorrow-Night" do
+vim_colors "Tomorrow-Night" do
   author "Johan Sahlen"
   notes "Based on Tomorrow-Night by Chris Kempson, http://github.com/chriskempson/vim-tomorrow-theme"
 
@@ -27,11 +27,12 @@ vim_colors "New-Tomorrow-Night" do
   # Vim Highlighting
   Normal foreground, background
   LineNr selection
+  CursorLineNr foreground, line
   NonText selection
   SpecialKey selection
-  Search background, yellow
-  TabLine background, window
-  TabLineFill background, window
+  Search yellow, background, :gui => "reverse"
+  TabLine window, background, :gui => "reverse"
+  TabLineFill window, background, :gui => "reverse"
   TabLineSel comment
   StatusLine foreground, window
   StatusLineNC selection
@@ -54,7 +55,7 @@ vim_colors "New-Tomorrow-Night" do
 
   # Standard Highlighting
   Comment comment
-  Todo background, yellow
+  Todo orange, background, :gui => "reverse"
   Title comment
   Identifier red, :gui => "none"
   Statement foreground
@@ -116,8 +117,10 @@ vim_colors "New-Tomorrow-Night" do
   javaScriptMember orange
 
   # Diff Highlighting
-  diffAdded green
-  diffRemoved red
+  DiffAdd green, background, :gui => "reverse"
+  DiffDelete red, background, :gui => "reverse"
+  DiffChange nil, selection
+  DiffText red, background, :gui => "reverse"
 
   # ShowMarks Highlighting
   ShowMarksHLl orange, background, :gui => "none"
