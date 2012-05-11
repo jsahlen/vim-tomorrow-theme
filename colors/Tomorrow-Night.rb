@@ -27,7 +27,7 @@ vim_colors "Tomorrow-Night" do
   # Vim Highlighting
   Normal foreground, background
   LineNr selection
-  CursorLineNr foreground, line
+  CursorLineNr selection, line
   NonText selection
   SpecialKey selection
   Search yellow, background, :gui => "reverse"

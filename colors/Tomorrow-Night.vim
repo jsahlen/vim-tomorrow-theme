@@ -20,7 +20,7 @@ endif
 
 hi Normal                     guifg=#C5C8C6 ctermfg=251  guibg=#111215 ctermbg=NONE gui=NONE cterm=NONE
 hi LineNr                     guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
-hi CursorLineNr               guifg=#C5C8C6 ctermfg=251  guibg=#282A2E ctermbg=235  gui=NONE cterm=NONE
+hi CursorLineNr               guifg=#373B41 ctermfg=237  guibg=#282A2E ctermbg=235  gui=NONE cterm=NONE
 hi NonText                    guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi SpecialKey                 guifg=#373B41 ctermfg=237  gui=NONE cterm=NONE
 hi Search                     guifg=#F0C674 ctermfg=222  guibg=#111215 ctermbg=233  gui=REVERSE cterm=REVERSE
