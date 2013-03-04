@@ -48,7 +48,7 @@ hi SignColumn                 guibg=#111215 ctermbg=NONE gui=NONE cterm=NONE
 hi ColorColumn                guibg=#282A2E ctermbg=0    gui=NONE cterm=NONE
 hi Comment                    guifg=#969896 ctermfg=7    gui=NONE cterm=NONE
 hi Todo                       guifg=#DE935F ctermfg=11   guibg=#111215 ctermbg=NONE gui=REVERSE cterm=REVERSE
-hi Title                      guifg=#969896 ctermfg=7    gui=NONE cterm=NONE
+hi Title                      guifg=#969896 ctermfg=7    gui=bold cterm=bold
 hi Identifier                 guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
 hi Statement                  guifg=#C5C8C6 ctermfg=NONE gui=NONE cterm=NONE
 hi Conditional                guifg=#C5C8C6 ctermfg=NONE gui=NONE cterm=NONE
@@ -65,6 +65,7 @@ hi Define                     guifg=#B294BB ctermfg=5    gui=NONE cterm=NONE
 hi Include                    guifg=#81A2BE ctermfg=4    gui=NONE cterm=NONE
 hi Ignore                     guifg=#666666 ctermfg=241  gui=NONE cterm=NONE
 hi vimCommand                 guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
+hi Underlined                 guifg=#81A2BE ctermfg=4    gui=underline cterm=underline
 hi storageClass               guifg=#F0C674 ctermfg=3    gui=NONE cterm=NONE
 hi cType                      guifg=#F0C674 ctermfg=3    gui=NONE cterm=NONE
 hi cStorageClass              guifg=#B294BB ctermfg=5    gui=NONE cterm=NONE
@@ -105,6 +106,13 @@ hi ShowMarksHLo               guifg=#B294BB ctermfg=5    guibg=#111215 ctermbg=N
 hi ShowMarksHLu               guifg=#F0C674 ctermfg=3    guibg=#111215 ctermbg=NONE gui=NONE cterm=NONE
 hi ShowMarksHLm               guifg=#8ABEB7 ctermfg=6    guibg=#111215 ctermbg=NONE gui=NONE cterm=NONE
 hi Tag                        guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
+hi htmlBold                term=bold cterm=bold gui=bold
+hi htmlBoldUnderline       term=bold,underline cterm=bold,underline gui=bold,underline
+hi htmlBoldItalic          term=bold,italic cterm=bold,italic gui=bold,italic
+hi htmlBoldUnderlineItalic term=bold,italic,underline cterm=bold,italic,underline gui=bold,italic,underline
+hi htmlUnderline           term=underline cterm=underline gui=underline
+hi htmlUnderlineItalic     term=italic,underline cterm=italic,underline gui=italic,underline
+hi htmlItalic              term=italic cterm=italic gui=italic
 hi cssTagName                 guifg=#B294BB ctermfg=5    gui=NONE cterm=NONE
 hi cssIdentifier              guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
 hi cssClassName               guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
