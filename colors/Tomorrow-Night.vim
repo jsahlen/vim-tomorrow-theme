@@ -25,9 +25,9 @@ hi CursorLineNr               guifg=#373B41 ctermfg=8    guibg=#282A2E ctermbg=0
 hi NonText                    guifg=#373B41 ctermfg=8    gui=NONE cterm=NONE
 hi SpecialKey                 guifg=#373B41 ctermfg=8    gui=NONE cterm=NONE
 hi Search                     guifg=#F0C674 ctermfg=3    guibg=#111215 ctermbg=NONE gui=REVERSE cterm=REVERSE
-hi TabLine                    guifg=#4D5057 ctermfg=15   guibg=#111215 ctermbg=NONE gui=REVERSE cterm=REVERSE
-hi TabLineFill                guifg=#4D5057 ctermfg=15   guibg=#111215 ctermbg=NONE gui=REVERSE cterm=REVERSE
-hi TabLineSel                 guifg=#969896 ctermfg=7    gui=NONE cterm=NONE
+hi TabLine                    guifg=#4D5057 ctermfg=15   guibg=#4D5057 ctermbg=NONE gui=REVERSE cterm=REVERSE
+hi TabLineFill                guifg=#4D5057 ctermfg=15   guibg=#4D5057 ctermbg=NONE gui=REVERSE cterm=REVERSE
+hi TabLineSel                 guifg=#969896 ctermfg=NONE gui=BOLD cterm=BOLD
 hi StatusLine                 guifg=#C5C8C6 ctermfg=NONE guibg=#4D5057 ctermbg=15   gui=NONE cterm=NONE
 hi StatusLineNC               guifg=#373B41 ctermfg=8    gui=NONE cterm=NONE
 hi VertSplit                  guifg=#4D5057 ctermfg=15   guibg=#4D5057 ctermbg=15   gui=NONE cterm=NONE
@@ -120,6 +120,7 @@ hi cssColor                   guifg=#8ABEB7 ctermfg=6    gui=NONE cterm=NONE
 hi cssPseudoClass             guifg=#CC6666 ctermfg=1    gui=ITALIC cterm=NONE
 hi cssFontDescriptor          guifg=#B294BB ctermfg=5    gui=NONE cterm=NONE
 hi cssBraces                  guifg=NONE    ctermfg=NONE gui=NONE cterm=NONE
+hi cssImportant               guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
 hi User2                      guifg=#4D5057 ctermfg=15   guibg=#CC6666 ctermbg=9    gui=REVERSE cterm=REVERSE
 
 hi javaScriptThis             guifg=#CC6666 ctermfg=1    gui=NONE cterm=NONE
@@ -129,10 +130,12 @@ hi link htmlTag          Tag
 hi link htmlTagName      Tag
 hi link htmlTagN         Tag
 
-hi link cssPseudoClassId cssPseudoClass
-hi link sassProperty     StorageClass
-hi link sassClass        cssClassName
-hi link sassClassChar    sassClass
-hi link sassMixinName    Function
+hi link cssPseudoClassId  cssPseudoClass
+hi link sassProperty      StorageClass
+hi link sassClass         cssClassName
+hi link sassClassChar     sassClass
+hi link sassMixinName     Function
+hi link lessVariable      Identifier
+hi link lessAmpersandChar Character
 
 hi CtrlPMatch                 guifg=#DE935F ctermfg=11   gui=NONE cterm=NONE
